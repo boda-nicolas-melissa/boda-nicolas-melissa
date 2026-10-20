@@ -13,10 +13,10 @@ body {
   font-family: 'Raleway', sans-serif; font-weight: 300;
   overflow-x: hidden;
 }
- 
+
 /* ── CANVAS PARTÍCULAS ── */
 #canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; opacity: 0.45; }
- 
+
 /* ── AUDIO BAR ── */
 .audio-bar {
   position: fixed; bottom: 20px; right: 20px; z-index: 100;
@@ -45,7 +45,7 @@ body {
 .audio-wave span:nth-child(5){ height: 5px;  animation-delay: 0.6s; }
 @keyframes wave { 0%,100%{ transform: scaleY(0.4); } 50%{ transform: scaleY(1); } }
 .audio-wave.paused span { animation-play-state: paused; }
- 
+
 /* ── HERO ── */
 .hero {
   position: relative; min-height: 100vh;
@@ -60,7 +60,7 @@ body {
 .ring:nth-child(3){ width:580px; height:580px; animation-delay:2.8s; border-color:rgba(196,160,90,0.07); }
 .ring:nth-child(4){ width:740px; height:740px; animation-delay:4.2s; border-color:rgba(196,160,90,0.04); }
 @keyframes ringPulse { 0%,100%{ opacity:0.3; transform:translate(-50%,-50%) scale(1); } 50%{ opacity:1; transform:translate(-50%,-50%) scale(1.03); } }
- 
+
 .hero-content { position: relative; z-index: 2; text-align: center; }
 .pre-title { font-size: 10px; letter-spacing: 7px; text-transform: uppercase; color: var(--gold); margin-bottom: 28px; opacity: 0; animation: fadeUp 1s ease 0.2s forwards; }
 .ornament { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 22px; opacity: 0; animation: fadeUp 1s ease 0.4s forwards; }
@@ -83,14 +83,14 @@ body {
 @keyframes numFlip { 0%{ transform:translateY(-4px); opacity:0.5; } 100%{ transform:translateY(0); opacity:1; } }
 .cd-lbl { font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: rgba(196,160,90,0.5); margin-top: 5px; }
 @keyframes fadeUp { from{ opacity:0; transform:translateY(18px); } to{ opacity:1; transform:translateY(0); } }
- 
+
 /* ── LAYOUT SECCIONES ── */
 .page-body { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 .section { position: relative; z-index: 1; padding: 64px 0 0; }
 .section-sep { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
 .sep-line { flex: 1; height: 0.5px; background: rgba(196,160,90,0.2); }
 .sep-label { font-size: 9px; letter-spacing: 5px; text-transform: uppercase; color: var(--gold); white-space: nowrap; }
- 
+
 /* ── EVENTO ── */
 .event-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
 .event-box { background: rgba(196,160,90,0.04); border: 0.5px solid rgba(196,160,90,0.18); padding: 24px; text-align: center; }
@@ -99,7 +99,7 @@ body {
 .event-label { font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: rgba(196,160,90,0.5); margin-bottom: 6px; }
 .event-val   { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; color: var(--cream); }
 .event-sub   { font-size: 11px; color: rgba(196,160,90,0.5); margin-top: 3px; letter-spacing: 1px; }
- 
+
 /* ── MAPA ── */
 .map-link {
   display: block; text-decoration: none;
@@ -123,7 +123,7 @@ body {
   padding: 7px 14px; font-size: 9px; letter-spacing: 3px;
   text-transform: uppercase; color: var(--gold); white-space: nowrap;
 }
- 
+
 /* ── DRESSCODE ── */
 .dresscode-wrap { border: 0.5px solid rgba(196,160,90,0.18); border-radius: 4px; background: rgba(196,160,90,0.03); padding: 36px 32px; text-align: center; }
 .dc-icon  { font-size: 34px; margin-bottom: 16px; display: block; }
@@ -132,7 +132,7 @@ body {
 .dc-items { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-bottom: 18px; }
 .dc-item  { padding: 9px 18px; border: 0.5px solid rgba(196,160,90,0.25); border-radius: 2px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(196,160,90,0.75); background: rgba(196,160,90,0.04); }
 .dc-note  { font-size: 11px; color: rgba(196,160,90,0.35); letter-spacing: 0.5px; font-style: italic; }
- 
+
 /* ── MÚSICA ── */
 .music-wrap { border: 0.5px solid rgba(196,160,90,0.18); border-radius: 4px; background: rgba(196,160,90,0.03); padding: 36px 32px; }
 .music-head { text-align: center; margin-bottom: 28px; }
@@ -200,7 +200,7 @@ body {
   border-radius: 40px; padding: 10px 22px; font-size: 12px; color: var(--gold);
   letter-spacing: 1px; z-index: 200; white-space: nowrap;
 }
- 
+
 /* ── FORMULARIO ── */
 .form-wrap { background: rgba(255,255,255,0.025); border: 0.5px solid rgba(196,160,90,0.18); border-radius: 4px; padding: 36px 32px; }
 .form-group { margin-bottom: 22px; }
@@ -231,12 +231,12 @@ textarea.form-input { resize: vertical; min-height: 80px; }
 .success-name { font-family:'Cormorant Garamond',serif; font-size:32px; font-weight:300; color:var(--cream); margin-bottom:12px; }
 .success-text { font-size:13px; color:rgba(196,160,90,0.65); line-height:1.9; letter-spacing:0.5px; }
 .error-panel { display:none; background:rgba(200,70,70,0.08); border:0.5px solid rgba(200,70,70,0.3); border-radius:2px; padding:14px 18px; font-size:13px; color:#e09090; margin-top:12px; text-align:center; }
- 
+
 /* ── FOOTER ── */
 .footer { position: relative; z-index: 1; text-align: center; padding: 80px 24px 60px; }
 .footer-names { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-style: italic; font-weight: 300; color: rgba(196,160,90,0.3); margin-bottom: 10px; }
 .footer-heart { color: rgba(196,160,90,0.2); font-size: 14px; letter-spacing: 6px; }
- 
+
 /* ── RESPONSIVE ── */
 @media (max-width: 480px) {
   .cd-box { padding: 14px 14px; min-width: 60px; }
@@ -248,11 +248,11 @@ textarea.form-input { resize: vertical; min-height: 80px; }
   .audio-bar { bottom: 12px; right: 12px; }
 }
 </style>
- 
- 
+
+
 <canvas id="canvas"></canvas>
 <div class="toast" id="toast"></div>
- 
+
 <!-- ═══ AUDIO PLAYER ═══ -->
 <div class="audio-bar">
   <button class="audio-btn" id="audioBtn" onclick="toggleAudio()">▶</button>
@@ -265,7 +265,7 @@ textarea.form-input { resize: vertical; min-height: 80px; }
   </div>
 </div>
 <div id="yt-player" style="position:fixed;left:-9999px;top:-9999px;width:1px;height:1px;opacity:0;pointer-events:none;"></div>
- 
+
 <!-- ═══ HERO ═══ -->
 <section class="hero">
   <div class="hero-bg"></div>
@@ -293,9 +293,9 @@ textarea.form-input { resize: vertical; min-height: 80px; }
     </div>
   </div>
 </section>
- 
+
 <div class="page-body">
- 
+
   <!-- ═══ EL GRAN DÍA ═══ -->
   <section class="section">
     <div class="section-sep">
@@ -314,7 +314,7 @@ textarea.form-input { resize: vertical; min-height: 80px; }
       </div>
     </div>
   </section>
- 
+
   <!-- ═══ UBICACIÓN ═══ -->
   <section class="section">
     <div class="section-sep">
@@ -362,7 +362,7 @@ textarea.form-input { resize: vertical; min-height: 80px; }
           <!-- calle Pdte Oribe (vertical, ~x=158-164 ya cubierto) -->
           <!-- calle Rizal (horizontal delgada abajo de Rivera) -->
           <rect x="300" y="140" width="280" height="5" fill="#211710"/>
- 
+
           <!-- etiquetas de calles -->
           <text x="10"  y="101" fill="rgba(196,160,90,0.55)" font-size="7.5" font-family="'Raleway',sans-serif" letter-spacing="1.5">AV. GENERAL RIVERA</text>
           <!-- Herrera rotado -->
@@ -370,7 +370,7 @@ textarea.form-input { resize: vertical; min-height: 80px; }
           <text x="165" y="80" fill="rgba(196,160,90,0.3)"  font-size="6.5" font-family="'Raleway',sans-serif" letter-spacing="1" transform="rotate(-90,165,80)">PDTE. ORIBE</text>
           <text x="10"  y="46"  fill="rgba(196,160,90,0.3)"  font-size="6.5" font-family="'Raleway',sans-serif" letter-spacing="1">HORACIO</text>
           <text x="320" y="138" fill="rgba(196,160,90,0.3)"  font-size="6.5" font-family="'Raleway',sans-serif" letter-spacing="1">RIZAL</text>
- 
+
           <!-- PIN — intersección Rivera x Herrera (283,92) -->
           <!-- halo exterior animado -->
           <circle cx="283" cy="103" r="28" fill="rgba(196,160,90,0.06)">
@@ -391,7 +391,7 @@ textarea.form-input { resize: vertical; min-height: 80px; }
       <div class="map-cta">Ver en Maps ↗</div>
     </a>
   </section>
- 
+
   <!-- ═══ DRESSCODE ═══ -->
   <section class="section">
     <div class="section-sep">
@@ -403,11 +403,11 @@ textarea.form-input { resize: vertical; min-height: 80px; }
         Queremos que este día sea tan especial visualmente como en cada detalle.<br>
         Les pedimos asistir con vestimenta de etiqueta formal.
       </p>
- 
+
       <p class="dc-note">✦ &nbsp; Por favor evitar el color blanco &nbsp; ✦</p>
     </div>
   </section>
- 
+
   <!-- ═══ MÚSICA ═══ -->
   <section class="section">
     <div class="section-sep">
@@ -435,7 +435,7 @@ textarea.form-input { resize: vertical; min-height: 80px; }
       <p class="music-hint-small">✦ &nbsp; Cualquiera con el link puede agregar canciones directamente &nbsp; ✦</p>
     </div>
   </section>
- 
+
   <!-- ═══ FORMULARIO ═══ -->
   <section class="section" style="padding-bottom: 0;">
     <div class="section-sep">
@@ -443,19 +443,19 @@ textarea.form-input { resize: vertical; min-height: 80px; }
     </div>
     <div class="form-wrap">
       <div id="formBody">
- 
+
         <div class="form-group">
           <label class="form-label">Nombre completo</label>
           <input class="form-input" id="inp-nombre" type="text" placeholder="Tu nombre y apellido" autocomplete="name"/>
           <div class="field-error" id="err-nombre">Por favor ingresá tu nombre completo.</div>
         </div>
- 
+
         <div class="form-group">
           <label class="form-label">Cédula de identidad</label>
           <input class="form-input" id="inp-cedula" type="text" placeholder="1.234.567-8" autocomplete="off"/>
           <div class="field-error" id="err-cedula">Por favor ingresá tu cédula.</div>
         </div>
- 
+
         <div class="form-group">
           <label class="form-label">¿Vas a asistir?</label>
           <div class="radio-row" id="grp-asistencia">
@@ -464,7 +464,7 @@ textarea.form-input { resize: vertical; min-height: 80px; }
           </div>
           <div class="field-error" id="err-asistencia">Por favor confirmá tu asistencia.</div>
         </div>
- 
+
         <div class="form-group" id="sec-comida">
           <label class="form-label">Preferencia alimenticia <span>(opcional)</span></label>
           <div class="radio-row" id="grp-comida" style="margin-bottom:10px;">
@@ -476,11 +476,11 @@ textarea.form-input { resize: vertical; min-height: 80px; }
           </div>
           <textarea class="form-input" id="inp-detalle" placeholder="Alergias, intolerancias u otro detalle…" rows="3"></textarea>
         </div>
- 
+
         <button class="btn-submit" id="btnSubmit" onclick="submitForm()">Confirmar asistencia</button>
         <div class="error-panel" id="errorPanel">Hubo un problema al enviar. Por favor intentá de nuevo.</div>
       </div>
- 
+
       <div class="success-panel" id="successPanel">
         <div class="success-ring">✦</div>
         <div class="success-name" id="successName">¡Gracias!</div>
@@ -492,15 +492,15 @@ textarea.form-input { resize: vertical; min-height: 80px; }
       </div>
     </div>
   </section>
- 
+
 </div><!-- /page-body -->
- 
+
 <!-- ═══ FOOTER ═══ -->
 <footer class="footer">
   <div class="footer-names">Nicolas &amp; Melissa</div>
   <div class="footer-heart">· · · · ·</div>
 </footer>
- 
+
 <!-- YouTube IFrame API -->
 <script>
 var ytPlayer, ytReady=false, ytPlaying=false;
@@ -534,7 +534,7 @@ document.addEventListener('touchstart', function(){
   if(!autoStarted && ytReady && !ytPlaying){ ytPlayer.playVideo(); autoStarted=true; }
 }, {once: false});
 </script>
- 
+
 <script>
 /* ── COUNTDOWN ── */
 const wedding = new Date('2027-03-13T21:00:00');
@@ -553,7 +553,7 @@ function tick(){
   });
 }
 tick(); setInterval(tick,1000);
- 
+
 /* ── PARTÍCULAS ── */
 const canvas=document.getElementById('canvas');
 const ctx=canvas.getContext('2d');
@@ -569,7 +569,7 @@ class Particle{
 for(let i=0;i<80;i++) particles.push(new Particle());
 function animate(){ ctx.clearRect(0,0,W,H); particles.forEach(p=>{p.update();p.draw();}); requestAnimationFrame(animate); }
 animate();
- 
+
 /* ── FORMULARIO ── */
 const state={asistencia:'',comida:''};
 function pick(el,group){
@@ -585,7 +585,7 @@ function showError(id){ document.getElementById(id).style.display='block'; }
 function hideError(id){ document.getElementById(id).style.display='none'; }
 document.getElementById('inp-nombre').addEventListener('input',()=>hideError('err-nombre'));
 document.getElementById('inp-cedula').addEventListener('input',()=>hideError('err-cedula'));
- 
+
 async function submitForm(){
   const nombre=document.getElementById('inp-nombre').value.trim();
   const cedula=document.getElementById('inp-cedula').value.trim();
@@ -612,7 +612,7 @@ async function submitForm(){
     document.getElementById('errorPanel').style.display='block';
   }
 }
- 
+
 /* ── BUSCADOR SPOTIFY ── */
 window._cancionSugerida = '';
 const songDb = [
@@ -677,7 +677,7 @@ const songDb = [
   {name:"Watermelon Sugar",          artist:"Harry Styles",                 emoji:"🍉"},
   {name:"Flowers",                   artist:"Miley Cyrus",                  emoji:"🌸"},
 ];
- 
+
 let searchTimeout;
 function onSearchInput(){
   clearTimeout(searchTimeout);
@@ -685,7 +685,7 @@ function onSearchInput(){
   if(q.length < 1){ document.getElementById('spotifyResults').style.display='none'; return; }
   searchTimeout = setTimeout(()=>buscarCancion(), 200);
 }
- 
+
 function buscarCancion(){
   const q = document.getElementById('spotifySearch').value.trim().toLowerCase();
   if(!q){ return; }
@@ -694,7 +694,7 @@ function buscarCancion(){
   ).slice(0,5);
   renderResults(results, q);
 }
- 
+
 function renderResults(results, q){
   const box = document.getElementById('spotifyResults');
   if(results.length===0){
@@ -715,7 +715,7 @@ function renderResults(results, q){
   `).join('');
   box.style.display='block';
 }
- 
+
 function elegirCancion(name, artist){
   const cancionStr = name + ' — ' + artist;
   window._cancionSugerida = cancionStr;
@@ -727,4 +727,3 @@ function elegirCancion(name, artist){
   setTimeout(()=>{ toast.style.display='none'; }, 3000);
 }
 </script>
- 
